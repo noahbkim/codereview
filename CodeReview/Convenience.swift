@@ -35,3 +35,28 @@ extension UIColor {
     self.init(red: color.red, green: color.green, blue: color.blue, alpha: 1)
   }
 }
+
+struct Transition {
+  
+  static func Base() -> CATransition {
+    let transition = CATransition()
+    transition.duration = 0.45
+    transition.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+    return transition
+  }
+  
+  static func MoveIn() -> CATransition {
+    let transition = self.Base()
+    transition.type = .moveIn
+    transition.subtype = .fromRight
+    return transition
+  }
+  
+  static func Reveal() -> CATransition {
+    let transition = self.Base()
+    transition.type = .reveal
+    transition.subtype = .fromLeft
+    return transition
+  }
+  
+}
