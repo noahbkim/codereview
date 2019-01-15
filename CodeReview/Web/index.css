@@ -1,0 +1,42 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+#numbers, #code {
+  display: inline-block;
+}
+
+#numbers {
+  width: 5em;
+  text-align: right;
+  padding: 2em 1em;
+}
+
+#numbers > span::after {
+  content: "\A";
+  white-space: pre;
+}
+
+#code {
+  width: calc(100vw - 5rem);
+  display: flex;
+}
+
+pre, code {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+code {
+  padding: 2em 1em;
+  flex: 1;
+}
+
+code, .code {
+  font-size: 1.5em;
+  font-family: monospace;
+}
