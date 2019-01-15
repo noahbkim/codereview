@@ -16,6 +16,7 @@ body{
 }
 
 #numbers > span::after {
+  max-width: 0;
   content: "\A";
   white-space: pre;
 }

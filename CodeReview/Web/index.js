@@ -3,7 +3,7 @@ const raw = document.getElementById("raw");
 const numbers = document.getElementById("numbers");
 
 function communicate(key, value) {
-  webkit.messageHandlers[key].postMessage(value);
+  window.webkit.messageHandlers[key].postMessage(value);
 }
 
 function number(n) {
@@ -21,8 +21,11 @@ function reload() {
 
 function style(name) {
   theme.setAttribute("href", name + ".css");
-  const color = window.getComputedStyle(raw, null).getPropertyValue("background-color");
-  communicate("background", color);
+  setTimeout(() => {
+    const color = window.getComputedStyle(raw, null).getPropertyValue("background-color");
+    document.body.style.backgroundColor = color;
+    communicate("background", color);
+  }, 50);
 }
 
 reload();

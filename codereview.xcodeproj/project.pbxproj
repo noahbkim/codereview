@@ -28,6 +28,8 @@
 		2959722121EDCCB900BDF6BB /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 2959722021EDCCB900BDF6BB /* index.js */; };
 		2959722321EDCDB100BDF6BB /* index.css in Resources */ = {isa = PBXBuildFile; fileRef = 2959722221EDCDB100BDF6BB /* index.css */; };
 		2959722921EDD2A700BDF6BB /* solarized-dark.css in Resources */ = {isa = PBXBuildFile; fileRef = 2959722821EDD2A700BDF6BB /* solarized-dark.css */; };
+		2959722B21EE587700BDF6BB /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959722A21EE587700BDF6BB /* Convenience.swift */; };
+		2959722D21EE680300BDF6BB /* SplitCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959722C21EE680300BDF6BB /* SplitCodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		2959722021EDCCB900BDF6BB /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
 		2959722221EDCDB100BDF6BB /* index.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = index.css; sourceTree = "<group>"; };
 		2959722821EDD2A700BDF6BB /* solarized-dark.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "solarized-dark.css"; sourceTree = "<group>"; };
+		2959722A21EE587700BDF6BB /* Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convenience.swift; sourceTree = "<group>"; };
+		2959722C21EE680300BDF6BB /* SplitCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitCodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				2959715E21EDC20200BDF6BB /* Web */,
 				2959714C21EDBB2F00BDF6BB /* AppDelegate.swift */,
 				2959714E21EDBB2F00BDF6BB /* CodeViewController.swift */,
+				2959722C21EE680300BDF6BB /* SplitCodeViewController.swift */,
+				2959722A21EE587700BDF6BB /* Convenience.swift */,
 				2959715021EDBB2F00BDF6BB /* Main.storyboard */,
 				2959715321EDBB3000BDF6BB /* Assets.xcassets */,
 				2959715521EDBB3000BDF6BB /* LaunchScreen.storyboard */,
@@ -104,12 +110,12 @@
 				2959722021EDCCB900BDF6BB /* index.js */,
 				295971C221EDC51600BDF6BB /* highlight.pack.js */,
 				2959715F21EDC21900BDF6BB /* index.html */,
-				2959722721EDD23A00BDF6BB /* styles-new */,
+				2959722721EDD23A00BDF6BB /* styles */,
 			);
 			path = Web;
 			sourceTree = "<group>";
 		};
-		2959722721EDD23A00BDF6BB /* styles-new */ = {
+		2959722721EDD23A00BDF6BB /* styles */ = {
 			isa = PBXGroup;
 			children = (
 				2959717E21EDC51600BDF6BB /* color-brewer.css */,
@@ -125,7 +131,7 @@
 				2959719121EDC51600BDF6BB /* solarized-light.css */,
 				2959718621EDC51600BDF6BB /* xcode.css */,
 			);
-			name = "styles-new";
+			name = styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +222,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2959714F21EDBB2F00BDF6BB /* CodeViewController.swift in Sources */,
+				2959722B21EE587700BDF6BB /* Convenience.swift in Sources */,
+				2959722D21EE680300BDF6BB /* SplitCodeViewController.swift in Sources */,
 				2959714D21EDBB2F00BDF6BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
